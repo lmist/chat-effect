@@ -2,13 +2,43 @@
   "name": "chat-effect",
   "private": true,
   "version": "0.1.0",
+  "type": "module",
   "description": "Chat SDK web app with vercel/chat vendored at repos/effect",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test lib/*.test.ts"
   },
   "dependencies": {
-    "chat": "^4.38.0"
+    "@ai-sdk/react": "^4.0.69",
+    "@ai-sdk/xai": "^4.0.39",
+    "@chat-adapter/state-memory": "^4.38.0",
+    "@chat-adapter/web": "^4.38.0",
+    "@radix-ui/react-slot": "^1.3.3",
+    "@xstate/react": "^6.1.0",
+    "ai": "^7.0.66",
+    "chat": "^4.38.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.31.0",
+    "next": "^16.3.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "tailwind-merge": "^3.6.0",
+    "xstate": "^5.32.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.2.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "postcss": "^8.5.26",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
   }
 }
