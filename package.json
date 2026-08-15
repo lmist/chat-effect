@@ -1,0 +1,11 @@
+{
+  "name": "chat-effect",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Chat SDK web app with vercel/chat vendored at repos/effect",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  }
+}
